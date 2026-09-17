@@ -305,19 +305,19 @@
     }
     .sidebar {
       background: none;
-      padding: 30px 24px 24px;
+      padding: 30px 24px 16px;
     }
-    .main { padding: 24px 26px 24px; }
+    .main { padding: 20px 26px 12px; }
     .name { font-size: 38px; }
     .role { letter-spacing: .18em; }
-    .masthead { margin-bottom: 20px; }
+    .masthead { margin-bottom: 14px; }
     .sidebar section + section { margin-top: 26px; }
-    .main section + section { margin-top: 20px; }
-    .main h2 { font-size: 17px; margin-bottom: 13px; }
+    .main section + section { margin-top: 15px; }
+    .main h2 { font-size: 17px; margin-bottom: 10px; }
     .sidebar h2 { font-size: 16px; }
     .about { font-size: 9.5px; line-height: 1.6; }
     .skills li { padding: 6px 0; font-size: 9px; }
-    .entry { padding-bottom: 13px; break-inside: avoid; }
+    .entry { padding-bottom: 11px; break-inside: avoid; }
     .body p, .body li { font-size: 9.5px; line-height: 1.6; }
     .body p { margin-bottom: 6px; }
     .body li { margin-bottom: 5px; }
@@ -340,7 +340,7 @@
     <section>
       <h2>About me</h2>
       <p class="about">
-        Software developer with 12 years of experience on production systems, currently building
+        Software developer with 13 years of experience on production systems, currently building
         backend services for cloud file storage at NetApp. The first half of my career was
         full-stack web work: C#&nbsp;.NET, React, AWS, some Ruby on Rails, and the last few
         years have been backend and platform: Go services on Kubernetes, message queues,
@@ -354,21 +354,22 @@
       <ul class="skills">
         <li>Go, C# .NET, Java, Python</li>
         <li>JavaScript, TypeScript</li>
-        <li>Ruby, Rails, PHP, Apex, WordPress</li>
-        <li>React, Next, Vue, jQuery…</li>
-        <li>HTML, CSS, LESS, SASS, Tailwind</li>
+        <li>React, React Native, Next, Vue…</li>
+        <li>HTML, CSS, Tailwind</li>
+        <li>Rails, PHP, Salesforce (Apex)</li>
         <li>Kubernetes, Helm, Docker, Linux</li>
-        <li>Azure (AKS, Key Vault, Workload Identity)</li>
+        <li>Azure AKS, Key Vault, Workload ID</li>
         <li>AWS, Google Cloud Platform</li>
-        <li>SQL, PostgreSQL, MySQL</li>
-        <li>Elasticsearch, Redis, Varnish</li>
+        <li>Distributed systems, ONTAP</li>
+        <li>REST APIs, OpenAPI</li>
+        <li>SQL, PostgreSQL, Elasticsearch</li>
+        <li>Redis, Varnish cache</li>
         <li>RabbitMQ, Azure Service Bus</li>
-        <li>REST APIs, OpenAPI, Salesforce</li>
         <li>OpenTelemetry, Prometheus, Grafana</li>
-        <li>CI/CD: GitHub Actions, Jenkins</li>
-        <li>Git/GitHub, GitLab</li>
+        <li>CI/CD: GitHub Actions, Jenkins, GitLab</li>
         <li>Container scanning, FedRAMP compliance</li>
-        <li>Agile, Scrum, unit &amp; reliability testing</li>
+        <li>Technical leadership, mentoring</li>
+        <li>Agile, Scrum, code review, testing</li>
       </ul>
     </section>
 
@@ -383,7 +384,7 @@
       <div class="refs">
         <div class="ref">
           <p class="ref-name">Valur Hrafn Einarsson</p>
-          <p class="ref-org">Vodafone / Sýn</p>
+          <p class="ref-org">Sýn</p>
           <p><b>T:</b> <a href="tel:+3546635933">+354 663 5933</a></p>
           <p><b>E:</b> <a href="mailto:valur@loaloa.is">valur@loaloa.is</a></p>
         </div>
@@ -429,36 +430,38 @@
         <div class="meta">
           <div class="org">NetApp</div>
           <div class="where">Reykjavík</div>
-          <div class="when">Aug 2023 – Present</div>
+          <div class="when">Jul 2024 – Present</div>
         </div>
         <div class="rail"></div>
         <div class="body">
-          <p class="title">Software Development Engineer, Cloud Volumes</p>
+          <p class="title">Software Engineer, Cloud Volumes</p>
           <p>
             Enterprise cloud file storage, sold as a first-party service inside Azure and GCP
             (Azure NetApp Files) - Go backend services behind the customer API, on Kubernetes.
           </p>
           <ul>
             <li>
-              Designed and shipped a worker service that moved every queue consumer and all
-              recurring background work (snapshot, replication, backup and key-rotation sync)
-              off the customer-facing API, so customer requests and internal jobs no longer
-              compete for the same pods. Owned it end to end, including a feature-flagged
-              rollout across three environments with a rollback path that needs no redeploy.
+              Designed and shipped the Cloud Volumes Service Worker, moving every queue
+              consumer and all recurring background sync (snapshot, replication, backup and
+              key rotation) out of the control plane, so customer requests and internal jobs
+              no longer compete for the same pods. Owned it end to end, including a
+              feature-flagged rollout across three environments with a rollback path that
+              needs no redeploy, and guided two junior developers through the work.
             </li>
             <li>
-              Migrated our storage-controller integration from a legacy proprietary API to
-              REST, covering volume lifecycle, networking, SMB and Kerberos, replication and
+              Delivered ONTAP REST components for our ZAPI-to-REST modernization, the group's
+              largest project: volume lifecycle, networking, SMB and Kerberos, replication and
               high-availability node routing.
             </li>
             <li>
-              Instrumented the service with metrics, distributed tracing and alerting, and
-              tuned CPU and memory from actual usage.
+                    Instrumented it with metrics, tracing and alerting; tuned CPU and memory.
             </li>
             <li>
-              Closed compliance and supply-chain security findings across five services in a
-              FedRAMP-authorized product: dependency and image scanning, base-image migration,
-              and chart digest fixes.
+              Volunteered as the team's Security Champion in a FedRAMP-authorized product:
+              drove and tracked security work across projects, ran vulnerability remediation,
+              and coordinated FedRAMP backports. Closed supply-chain findings across five
+              services through dependency and image scanning, base-image migration and chart
+              digest fixes.
             </li>
           </ul>
         </div>
@@ -466,24 +469,27 @@
 
       <article class="entry">
         <div class="meta">
-          <div class="org">Vodafone Iceland</div>
+          <div class="org">Sýn</div>
           <div class="where">Reykjavík</div>
-          <div class="when">Aug 2015 – Jul 2023</div>
+          <div class="when">Aug 2015 – Jun 2024</div>
         </div>
         <div class="rail"></div>
         <div class="body">
           <p class="title">Software developer</p>
           <p>
             Started on telecoms and IT: a self-service checkout system for customers, backend
-            services for administrators, and several Salesforce integrations. From 2017 I was
-            on a team focused on media and web, building for Vísir and the sites and services
-            around it: radio sites and apps, news and sports feeds, and an award-winning media
-            editor for video and audio clips. Also built a new Vodafone webstore for business
-            customers and contributed to the Stöð 2 app.
+            services for administrators, and several Salesforce integrations. From 2017 I was on
+            the media and web team behind Vísir, one of Iceland's largest news sites. Rebuilt
+            Vaktin, its live news and sports feed, from the ground up and kept extending it with
+            new features, and tuned site speed and caching with Elasticsearch, Redis and Varnish.
+            Built Klipparinn, an internal editor for video and audio clips, nominated for Digital
+            Solution of the Year at the 2019 SVEF awards and later extended into VísirTV, driving
+            a CasparCG broadcast server from a new editing interface. Also radio and TV apps for
+            Stöð 2, Bylgjan, FM957 and X977, and a new webstore for business customers.
           </p>
           <p>
-            Mostly C#&nbsp;.NET and AWS on the backend, with React, TypeScript, LESS and
-            TailwindCSS on the front end, plus some Ruby on Rails.
+            Mostly C#&nbsp;.NET and AWS on the backend, with React, TypeScript and React Native
+            on the front end, plus some Ruby on Rails.
           </p>
         </div>
       </article>
@@ -498,9 +504,9 @@
         <div class="body">
           <p class="title">Software developer</p>
           <p>
-            Extended a custom search engine over a large database of legal writings and wrote
-            the admin panel its backend users worked in. Classic WAMP stack: SQL, PHP, HTML,
-            CSS and JavaScript.
+            Improved the search engine over a database of Icelandic court judgments and statutes,
+            and built its admin interface from scratch, replacing hand-written SQL for user and
+            content management. Classic WAMP stack.
           </p>
         </div>
       </article>
@@ -515,7 +521,7 @@
         <div class="body">
           <p class="title">Software developer</p>
           <p>
-            Built website templates for small and medium businesses, again on a WAMP stack.
+            Built e-commerce website templates for SmartWebber, again a WAMP stack.
           </p>
         </div>
       </article>
