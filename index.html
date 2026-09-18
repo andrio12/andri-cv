@@ -49,7 +49,7 @@
   .sidebar {
     background: var(--sidebar);
     color: var(--on-dark);
-    padding: 48px 34px 56px;
+    padding: 25px 34px 56px;
   }
 
   .sidebar h2,
@@ -68,7 +68,7 @@
     border-bottom: 1px solid rgba(255,255,255,.28);
   }
 
-  .sidebar section + section { margin-top: 42px; }
+  .sidebar section + section { margin-top: 32px; }
 
   .about { margin: 0; font-size: 12.5px; line-height: 1.7; }
 
@@ -88,20 +88,19 @@
 
   .links a {
     color: var(--on-dark);
-    font-size: 12px;
     overflow-wrap: anywhere;
   }
 
   /* ---------- main column ---------- */
 
-  .main { padding: 44px 42px 56px; }
+  .main { padding: 25px 42px 56px; }
 
   .masthead {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
   }
 
   .name {
@@ -151,21 +150,21 @@
   .contact svg { width: 12px; height: 12px; fill: #fff; }
 
   .main h2 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--ink);
     text-transform: uppercase;
     border-bottom: 1px solid var(--rule-dark);
-    margin-bottom: 26px;
+    margin-bottom: 18px;
   }
 
-  .main section + section { margin-top: 40px; }
+  .main section + section { margin-top: 30px; }
 
   /* ---------- timeline entries ---------- */
 
   .entry {
     display: grid;
     grid-template-columns: 132px 22px 1fr;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
   }
 
   .entry:last-child { padding-bottom: 0; }
@@ -373,12 +372,6 @@
       </ul>
     </section>
 
-    <section class="links">
-      <h2>Links</h2>
-      <b>LinkedIn:</b>
-      <a href="https://www.linkedin.com/in/andri-ólafsson-65b32587/">linkedin.com/in/andri-ólafsson-65b32587</a>
-    </section>
-
     <section>
       <h2>References</h2>
       <div class="refs">
@@ -395,6 +388,14 @@
           <p><b>E:</b> <a href="mailto:Stefan.Arngrimsson@netapp.com">Stefan.Arngrimsson@netapp.com</a></p>
         </div>
       </div>
+    </section>
+
+    <section class="links">
+      <h2>Links</h2>
+      <b>LinkedIn:</b>
+      <a href="https://www.linkedin.com/in/andri-ólafsson-65b32587/">
+        linkedin.com/in/andri-ólafsson-65b32587
+      </a>
     </section>
 
   </aside>
@@ -454,9 +455,6 @@
               high-availability node routing.
             </li>
             <li>
-                    Instrumented it with metrics, tracing and alerting; tuned CPU and memory.
-            </li>
-            <li>
               Volunteered as the team's Security Champion in a FedRAMP-authorized product:
               drove and tracked security work across projects, ran vulnerability remediation,
               and coordinated FedRAMP backports. Closed supply-chain findings across five
@@ -478,18 +476,19 @@
           <p class="title">Software developer</p>
           <p>
             Started on telecoms and IT: a self-service checkout system for customers, backend
-            services for administrators, and several Salesforce integrations. From 2017 I was on
-            the media and web team behind Vísir, one of Iceland's largest news sites. Rebuilt
+            services for administrators both written in Ruby on Rails. Several Salesforce integrations in Apex code. 
+            From 2017 I was on the media and web team behind Vísir, one of Iceland's largest news sites. Rebuilt
             Vaktin, its live news and sports feed, from the ground up and kept extending it with
-            new features, and tuned site speed and caching with Elasticsearch, Redis and Varnish.
-            Built Klipparinn, an internal editor for video and audio clips, nominated for Digital
+            new features. For Vísir we focused on site speed and caching with Elasticsearch, Redis and Varnish.
+            Contributed to building Klipparinn, an internal editor for video and audio clips, nominated for Digital
             Solution of the Year at the 2019 SVEF awards and later extended into VísirTV, driving
             a CasparCG broadcast server from a new editing interface. Also radio and TV apps for
-            Stöð 2, Bylgjan, FM957 and X977, and a new webstore for business customers.
+            Stöð 2, Bylgjan, FM957 and X977, and a new webstore for business customers. 
+            I also contributed to other projects like vodafone.is and the yearly fiscal report websites.
           </p>
           <p>
             Mostly C#&nbsp;.NET and AWS on the backend, with React, TypeScript and React Native
-            on the front end, plus some Ruby on Rails.
+            on the front end.
           </p>
         </div>
       </article>
@@ -528,7 +527,7 @@
 
     </section>
 
-    <section>
+    <section class="education">
       <h2>Education</h2>
 
       <article class="entry">
