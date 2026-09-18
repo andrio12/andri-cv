@@ -1,6 +1,6 @@
 ## Skills
 
-Single source of truth for the CV (`index.html` sidebar) and the LinkedIn skills section. Last reviewed 17 Sep 2026 against a 62-item LinkedIn list and the CV's 18 grouped lines.
+Single source of truth for the CV (`index.html` sidebar) and the LinkedIn skills section. Last reviewed 18 Sep 2026 against a 62-item LinkedIn list and the CV's 18 grouped lines.
 
 LinkedIn caps the section at **100** skills, so at 62 there is no pressure to delete anything. Skills attached to Experience entries don't count toward the cap.
 
@@ -148,6 +148,16 @@ Container scanning, FedRAMP compliance
 Technical leadership, mentoring
 Agile, Scrum, code review, testing
 ```
+
+### The one bullet not to delete
+
+The NetApp bullet reading "Instrumented the service with metrics, distributed tracing and alerting, and tuned CPU and memory from actual usage" is the sole evidence in the entire work history for **OpenTelemetry, Prometheus and Grafana**. It was cut once for space on 18 Sep 2026 and restored the same day, which is worth recording, because the loss is invisible: the three skills still read perfectly well in the sidebar, so nothing looks wrong until someone asks what's behind them.
+
+The About Me refers to "the observability and security work that keeps them running", but that's a claim about myself rather than something I did. The security half of that sentence has its own bullet; without this one the observability half has nothing.
+
+It's also what makes the NetApp entry show four kinds of work instead of three — building a service, delivering API components, *operating what I built*, and owning security. The operating half is the part that distinguishes a platform engineer from a feature developer.
+
+If the page needs a line back, take it from the Sýn entry's closing sentence about vodafone.is and the annual report websites, not from here.
 
 ### Acceptable divergences
 

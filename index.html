@@ -306,20 +306,20 @@
       background: none;
       padding: 30px 24px 16px;
     }
-    .main { padding: 20px 26px 12px; }
+    .main { padding: 18px 26px 8px; }
     .name { font-size: 38px; }
     .role { letter-spacing: .18em; }
-    .masthead { margin-bottom: 14px; }
+    .masthead { margin-bottom: 12px; }
     .sidebar section + section { margin-top: 26px; }
-    .main section + section { margin-top: 15px; }
-    .main h2 { font-size: 17px; margin-bottom: 10px; }
+    .main section + section { margin-top: 13px; }
+    .main h2 { font-size: 17px; margin-bottom: 9px; }
     .sidebar h2 { font-size: 16px; }
     .about { font-size: 9.5px; line-height: 1.6; }
     .skills li { padding: 6px 0; font-size: 9px; }
-    .entry { padding-bottom: 11px; break-inside: avoid; }
+    .entry { padding-bottom: 10px; break-inside: avoid; }
     .body p, .body li { font-size: 9.5px; line-height: 1.6; }
-    .body p { margin-bottom: 6px; }
-    .body li { margin-bottom: 5px; }
+    .body p { margin-bottom: 5px; }
+    .body li { margin-bottom: 4px; }
     .title { font-size: 10px; margin-bottom: 6px; }
     .contact li { padding: 6px 0; font-size: 9.5px; }
     .refs { break-inside: avoid; gap: 12px; }
@@ -442,12 +442,16 @@
           </p>
           <ul>
             <li>
-              Designed and shipped the Cloud Volumes Service Worker, moving every queue
-              consumer and all recurring background sync (snapshot, replication, backup and
-              key rotation) out of the control plane, so customer requests and internal jobs
-              no longer compete for the same pods. Owned it end to end, including a
-              feature-flagged rollout across three environments with a rollback path that
-              needs no redeploy, and guided two junior developers through the work.
+              Designed and shipped the Cloud Volumes Service Worker, moving all queue
+              consumers and recurring background sync (snapshot, replication, backup, key
+              rotation) out of the control plane so customer requests and internal jobs stop
+              competing for the same pods. Owned it end to end: a feature-flagged rollout
+              across three environments with no-redeploy rollback, and guided two junior
+              developers through the work.
+            </li>
+            <li>
+              Instrumented the service with metrics, distributed tracing and alerting, and
+              tuned CPU and memory from actual usage.
             </li>
             <li>
               Delivered ONTAP REST components for our ZAPI-to-REST modernization, the group's
@@ -475,16 +479,17 @@
         <div class="body">
           <p class="title">Software developer</p>
           <p>
-            Started on telecoms and IT: a self-service checkout system for customers, backend
-            services for administrators both written in Ruby on Rails. Several Salesforce integrations in Apex code. 
+            Started on telecoms and IT: a self-service checkout system for customers and backend
+            services for administrators, both written in Ruby on Rails, plus several Salesforce
+            integrations in Apex.
             From 2017 I was on the media and web team behind Vísir, one of Iceland's largest news sites. Rebuilt
             Vaktin, its live news and sports feed, from the ground up and kept extending it with
             new features. For Vísir we focused on site speed and caching with Elasticsearch, Redis and Varnish.
             Contributed to building Klipparinn, an internal editor for video and audio clips, nominated for Digital
             Solution of the Year at the 2019 SVEF awards and later extended into VísirTV, driving
             a CasparCG broadcast server from a new editing interface. Also radio and TV apps for
-            Stöð 2, Bylgjan, FM957 and X977, and a new webstore for business customers. 
-            I also contributed to other projects like vodafone.is and the yearly fiscal report websites.
+            Stöð 2, Bylgjan, FM957 and X977, and a new webstore for business customers.
+            I also contributed to other projects like vodafone.is and the annual report websites.
           </p>
           <p>
             Mostly C#&nbsp;.NET and AWS on the backend, with React, TypeScript and React Native
